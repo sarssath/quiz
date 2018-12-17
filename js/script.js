@@ -10,5 +10,37 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-
 });
+
+function network (channels) {
+    if (channels === "DisneyChannel") {
+        return 4;
+    } else if (channels === "Nickelodeon") {
+        return 8;
+    } 
+}
+
+function show (tvshow) {
+    if (tvshow === "Wizards of Waverly Place") {
+        return 4;
+    } else if (tvshow === "Hannah Montana") {
+        return 5;
+    } else if (tvshow === "Zoey 101") {
+        return 9;
+    } else if (tvshow === "Degrassi") {
+        return 10;
+    } 
+}
+
+function actors (characters) {
+    if (characters === "Raven-Symone") {
+        return 4;
+    } else if (characters === "Ashley Tisdale") {
+        return 5;
+    } else if (characters === "Victoria Justice") {
+        return 9;
+    } else if (characters === "Jamie Lynn Spears") {
+        return 10;
+    } 
+}
+
