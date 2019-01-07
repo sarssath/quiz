@@ -5,10 +5,8 @@ $(document).ready(function() {
         var name = $("#name").val();
         var techPlacement = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
-        var q1Result = $("#question1").val();
-        var q2Result = $("#question2").val();
-        var q3Result = $("#question3").val();
-        var totalScore;
+        var totalScore = totalScore();
+        
     });
 });
 
@@ -42,5 +40,21 @@ function actors (characters) {
     } else if (characters === "Jamie Lynn Spears") {
         return 10;
     } 
+}
+
+function totalScore () {
+    var q1Result = $("#question1").val();
+    var score = network (q1Result);
+    var q2Result = $("#question2").val();
+    score = show (q2Result) + score;
+    var q3Result = $("#question3").val();
+    score = actors (q3Result) + score;
+    
+    if (totalScore >= 12 || totalScore <= 14) {
+    var finalVariable = "Disney Channel";
+    } else if (totalScore >= 26 || totalScore <= 29) {
+    finalVariable = "Nickelodeon";
+    } 
+    $("button").text(finalVariable);
 }
 
