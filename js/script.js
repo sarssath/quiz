@@ -10,7 +10,7 @@ $(document).ready(function() {
 });
 
 function network (channels) {
-    if (channels === "DisneyChannel") {
+    if (channels === "Disney Channel") {
         return 4;
     } else if (channels === "Nickelodeon") {
         return 8;
@@ -52,7 +52,7 @@ function totalScore () {
     if (score >= 12 || score <= 14) {
     var finalVariable = "Disney Channel";
     } else if (score >= 26 || score <= 29) {
-    finalVariable = "Nickelodeon";
+    var finalVariable = "Nickelodeon";
     } 
     $("button").text(finalVariable);
 }
