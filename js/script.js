@@ -49,11 +49,13 @@ function totalScore () {
     var q3Result = $("#question3").val();
     score = actors (q3Result) + score;
     
-    if (score >= 12 || score <= 14) {
+    if (score <15) {
     var finalVariable = "Disney Channel";
-    } else if (score >= 26 || score <= 29) {
+    } else if (score >15) {
     var finalVariable = "Nickelodeon";
-    } 
+    } else if (score ===15) {
+    var finalVariable = "You're an avid watcher of both!!";
+    }
     $("button").text(finalVariable);
 }
 
