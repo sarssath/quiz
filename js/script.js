@@ -5,8 +5,7 @@ $(document).ready(function() {
         var name = $("#name").val();
         var techPlacement = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
-        var totalScore = totalScore();
-        
+        var totalScores = totalScore();
     });
 });
 
@@ -50,9 +49,9 @@ function totalScore () {
     var q3Result = $("#question3").val();
     score = actors (q3Result) + score;
     
-    if (totalScore >= 12 || totalScore <= 14) {
+    if (score >= 12 || score <= 14) {
     var finalVariable = "Disney Channel";
-    } else if (totalScore >= 26 || totalScore <= 29) {
+    } else if (score >= 26 || score <= 29) {
     finalVariable = "Nickelodeon";
     } 
     $("button").text(finalVariable);
