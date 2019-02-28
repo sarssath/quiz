@@ -11,10 +11,10 @@
 }
 
 body {
-    background-color: white;
+    background-color: #dee2e8;
 }
 
-.siliconValley {
+.channels {
     width: 50%;
     height:50%;
 }
@@ -44,11 +44,11 @@ a {
 button {
     margin-top: 10px;
     color: white;
-    background-color: red;
+    background-color: #99a9c1;
     font-size: 40px;
     border-radius: 25px;
     border:3px groove black ;
-    font-family: monospace;
+    font-family: Georgia;
 }
 
 body{
